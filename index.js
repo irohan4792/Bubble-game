@@ -15,8 +15,13 @@ function getscore(){
     document.querySelector("#score").textContent=sc;
 }
 function makebubble(){
+    
     let bubble =""
-    for(var i = 1 ; i <= 75 ; i++){
+    var temp = document.querySelector("#pbtm");
+    var bub = document.getElementsByClassName(".bubble")
+    var nos = Math.floor((temp.clientHeight*temp.clientWidth)/4450);
+    console.log(nos)
+    for(var i = 1 ; i <= nos ; i++){
         bubble +=`<div class="bubble">${Math.floor(Math.random()*10)}</div>`
     }
     document.querySelector("#pbtm").innerHTML = bubble
