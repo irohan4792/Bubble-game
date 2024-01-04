@@ -45,7 +45,11 @@ function makehit(){
     document.querySelector("#hit").textContent=hitnm;
 
 }
+const start = document.querySelector(".startbut")
+start.addEventListener("click", function(){
+
+    runtimer()
+})
 makehit()
 makebubble()
-runtimer()
 getscore()
