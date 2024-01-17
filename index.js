@@ -47,9 +47,10 @@ function makehit(){
 }
 const start = document.querySelector(".startbut")
 start.addEventListener("click", function(){
-
-    runtimer()
+    runtimer();
+    return
 })
 makehit()
 makebubble()
 getscore()
+
